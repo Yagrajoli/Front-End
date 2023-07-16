@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!--Header section start-->
+    <header class="header">
+        <div class="logo">
+            <h1>Algorithm Visualizer</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#" onclick="myfun()" class="nav-link" id="nav-link-algo">Algorithms <ion-icon name="caret-down-outline" class="submenu-icon"></ion-icon></a>
+                
+                    <ul class="dropdown-menu" id="submenu-content">
+                        <li><a href="#">Dijkstra's Algorithm</a></li>
+                        <li><a href="#" class="heapsort">Heap Sort</a></li>
+                        <li><a href="#">Merge Sort</a></li>
+                        <li><a href="#">Quick Sort</a></li>
+                        <li><a href="#">Insertion Sort</a></li>
+                        <li><a href="#" class="bubble-sort">Bubble Sort</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#" onclick="myfun()" class="nav-link nav-link-2" >Mazes & Patterns <ion-icon name="caret-down-outline" class="submenu-icon"></ion-icon></a>
+                    <ul class="dropdown-menu dropdown-menu-2">
+                        <li><a href="#">Dijkstra's Algorithm</a></li>
+                        <li><a href="#">Heap Sort</a></li>
+                        <li><a href="#">Merge Sort</a></li>
+                        <li><a href="#">Quick Sort</a></li>
+                        <li><a href="#">Insertion Sort</a></li>
+                        <li><a href="#" id="bubble-sort">Bubble Sort</a></li>
+                    </ul>
+                
+                </li>
+                <li><a href="#" class="nav-link" >Add Bomb</a></li>
+                <li><a href="#" class="nav-link" >Visualize!</a></li>
+                <li><a href="#" class="nav-link" >Clear Board</a></li>
+                <li><a href="#" class="nav-link" >Clear Walls & Weights</a></li>
+                <li><a href="#" class="nav-link" >Clear Path</a></li>
+                <li><a href="#" class="nav-link" >Speed: Fast</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- header section end -->
+
+<section class="main-section">
+    <div class="main-text">
+        <ul>
+            <li> <div class="start iocons"><ion-icon name="chevron-forward-outline"></ion-icon></div> Start Node</li>
+            <li> <div class="target iocons"><ion-icon name="radio-button-on-outline"></ion-icon></div> Target Node</li>
+            <li> <div class="bomb iocons"><ion-icon name="balloon"></ion-icon></div> Bomb Node</li>
+            <li> <div class="weight iocons">  <ion-icon name="barbell-sharp"></ion-icon> </div> Weights Node</li>
+            <li> <div class="unvisited iocons"></div> Unvisited Node</li>
+            <li> <div class="visited iocons"></div> <div class="visited visited-1"></div> visited Node</li>
+            <li> <div class="shortest-path iocons"></div>Shortest-path Node</li>
+            <li> <div class="wall iocons "></div>Wall Node</li>
+
+
+        </ul>
+    </div>
+
+    <div class="algorithm-description">
+        <p>Pick an Algorithms and Visualize it!</p>
+    </div> 
+    
+    <!-- For bubble sort -->
+    
+        <div class="bubble" id="bubble">
+            
+        </div>
+    
+</section>
+
+
+
+
+    <!-- CDN link for ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- custom js link -->
+    <script src="app.js"></script>
+    <script src="insertion.js"></script>
+</body>
+</html>
